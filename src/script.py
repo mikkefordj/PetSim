@@ -555,7 +555,6 @@ class Simulator:
             self.boredombar.update(self.pet.boredom)
             self.happinessbar.update(self.pet.happiness)
 
-            # Update status message based on pet condition
             if self.pet.hunger > 80:
                 self.status_label.config(text=f"{self.pet.type} jest bardzo głodny", foreground="red")
             elif self.pet.boredom > 80:
